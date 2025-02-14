@@ -34,7 +34,7 @@ class RotsvastScraper:
             # Extract numeric value from price
             price = float(''.join(filter(str.isdigit, price_text)))
             
-            if price > 1400 && pice < 600:
+            if price > 1400 and pice < 600:
                 return None
                 
             title = listing.find('div', class_='residence-title').text.strip()
