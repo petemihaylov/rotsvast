@@ -162,34 +162,67 @@ class RotsvastScraper:
                 time.sleep(5)
 
     def update_readme(self):
-        # Read existing content
-        existing_content = ""
+        # Get all unique listings, keeping only the most recent version
+        all_listings = {}  # Using dict to maintain unique listings by URL
+        
+        # Add current listings
+        for listing in self.listings:
+            all_listings[listing['link']] = listing
+            
+        # Read and parse existing content for previous listings
         if os.path.exists('README.md'):
-            with open('README.md', 'r', encoding='utf-8') as f:
-                existing_content = f.read()
-
+            try:
+                with open('README.md', 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    
+                # Extract listings from existing content using simple parsing
+                listing_sections = content.split('###')[1:]  # Split by listing headers
+                for section in listing_sections:
+                    if '[View listing](' in section:
+                        link = section.split('[View listing](')[1].split(')')[0]
+                        # Only keep old listing if we haven't found it in current scrape
+                        if link not in all_listings:
+                            # Parse the old listing into our format
+                            price = float(section.split('**Price:** €')[1].split(' ')[0])
+                            found_date = section.split('**Found on:** ')[1].split('\n')[0]
+                            location = section.split(' - ')[1].split('\n')[0]
+                            street = section.split('\n')[0].strip()
+                            properties = section.split('**Properties:**\n')[1].split('\n* [View')[0]
+                            
+                            all_listings[link] = {
+                                'title': f"{street} - {location}",
+                                'location': location,
+                                'street': street,
+                                'price': price,
+                                'link': link,
+                                'properties': properties,
+                                'found_date': found_date
+                            }
+            except Exception as e:
+                print(f"Error parsing existing README: {e}")
+        
+        # Write updated README with all unique listings
         with open('README.md', 'w', encoding='utf-8') as f:
             f.write("# Eindhoven Housing Listings\n\n")
             f.write(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
             
-            # Write new listings
-            if self.listings:
-                f.write(f"## New Listings ({len(self.listings)} found)\n\n")
-                for listing in self.listings:
+            # Write all listings, sorted by date (newest first)
+            all_listings_sorted = sorted(
+                all_listings.values(),
+                key=lambda x: datetime.strptime(x['found_date'], '%Y-%m-%d %H:%M:%S'),
+                reverse=True
+            )
+            
+            if all_listings_sorted:
+                f.write(f"Found {len(all_listings_sorted)} listings under €1400:\n\n")
+                for listing in all_listings_sorted:
                     f.write(f"### {listing['street']} - {listing['location']}\n")
                     f.write(f"* **Price:** €{listing['price']:.2f} per month\n")
                     f.write(f"* **Found on:** {listing['found_date']}\n")
                     f.write(f"* **Properties:**\n{listing['properties']}\n")
                     f.write(f"* [View listing]({listing['link']})\n\n")
             else:
-                f.write("No new listings found under €1400 at this time.\n\n")
-            
-            # Keep existing content (excluding header)
-            if existing_content:
-                existing_sections = existing_content.split('\n')[3:]  # Skip the header and update time
-                if existing_sections:
-                    f.write("## Previous Listings\n\n")
-                    f.write('\n'.join(existing_sections))
+                f.write("No listings found under €1400 at this time.\n")
 
 def main():
     try:
