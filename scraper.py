@@ -1,3 +1,4 @@
+# scraper.py
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -5,6 +6,7 @@ from datetime import datetime
 import time
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+import os
 
 class RotsvastScraper:
     def __init__(self, base_url="https://www.rotsvast.nl/en/property-listings/"):
@@ -16,6 +18,8 @@ class RotsvastScraper:
         }
         self.listings = []
         self.session = self._create_session()
+        self.history_file = 'listing_history.json'
+        self.known_listings = self.load_history()
 
     def _create_session(self):
         session = requests.Session()
@@ -28,6 +32,20 @@ class RotsvastScraper:
         session.mount("https://", adapter)
         session.mount("http://", adapter)
         return session
+
+    def load_history(self):
+        if os.path.exists(self.history_file):
+            try:
+                with open(self.history_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            except json.JSONDecodeError:
+                print("Error reading history file, starting fresh")
+                return {}
+        return {}
+
+    def save_history(self):
+        with open(self.history_file, 'w', encoding='utf-8') as f:
+            json.dump(self.known_listings, f, indent=2, ensure_ascii=False)
 
     def get_page_content(self, page_number):
         params = {
@@ -50,12 +68,9 @@ class RotsvastScraper:
             raise
 
     def parse_price(self, price_text):
-        # Remove everything except digits, dots, and commas
         cleaned = ''.join(c for c in price_text if c.isdigit() or c in '.,')
-        # Convert price like "1.300,00" to float
         try:
             if ',' in cleaned:
-                # Replace dots with nothing (for thousands) and comma with dot
                 cleaned = cleaned.replace('.', '').replace(',', '.')
             return float(cleaned)
         except ValueError:
@@ -82,22 +97,23 @@ class RotsvastScraper:
             if not street:
                 return None
             
-            # Get the link from the clickable-block
             link = listing.find('a', class_='clickable-block')
             if not link:
                 return None
                 
-            # Get properties
             properties_div = listing.find('div', class_='residence-properties')
             properties = properties_div.text.strip() if properties_div else "No properties listed"
+            
+            full_link = f"https://www.rotsvast.nl{link['href']}"
                 
             return {
                 'title': f"{street.text.strip()} - {location.text.strip()}",
                 'location': location.text.strip(),
                 'street': street.text.strip(),
                 'price': price,
-                'link': f"https://www.rotsvast.nl{link['href']}",
-                'properties': properties
+                'link': full_link,
+                'properties': properties,
+                'found_date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
         except Exception as e:
             print(f"Error parsing listing: {e}")
@@ -115,7 +131,6 @@ class RotsvastScraper:
                 html_content = self.get_page_content(page_number)
                 soup = BeautifulSoup(html_content, 'html.parser')
                 
-                # Parse listings on current page
                 listings_elements = soup.find_all('div', class_='residence-gallery')
                 
                 if not listings_elements:
@@ -126,9 +141,11 @@ class RotsvastScraper:
                 for listing in listings_elements:
                     parsed_listing = self.parse_listing(listing)
                     if parsed_listing:
-                        self.listings.append(parsed_listing)
+                        listing_id = parsed_listing['link']
+                        if listing_id not in self.known_listings:
+                            self.listings.append(parsed_listing)
+                            self.known_listings[listing_id] = parsed_listing
                 
-                # Check if there's a next page
                 multipage = soup.find('div', class_='multipage')
                 if not multipage or multipage.find('span', class_='disabled next'):
                     has_more_pages = False
@@ -136,7 +153,7 @@ class RotsvastScraper:
                     break
                     
                 page_number += 1
-                retry_count = 0  # Reset retry count on successful page fetch
+                retry_count = 0
             except Exception as e:
                 print(f"Error on page {page_number}: {str(e)}")
                 retry_count += 1
@@ -146,27 +163,41 @@ class RotsvastScraper:
                 time.sleep(5)
 
     def update_readme(self):
+        # Read existing content
+        existing_content = ""
+        if os.path.exists('README.md'):
+            with open('README.md', 'r', encoding='utf-8') as f:
+                existing_content = f.read()
+
         with open('README.md', 'w', encoding='utf-8') as f:
             f.write("# Eindhoven Housing Listings\n\n")
             f.write(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
             
-            if not self.listings:
-                f.write("No listings found under €1400 at this time.\n")
-                return
-                
-            f.write(f"Found {len(self.listings)} listings under €1400:\n\n")
+            # Write new listings
+            if self.listings:
+                f.write(f"## New Listings ({len(self.listings)} found)\n\n")
+                for listing in self.listings:
+                    f.write(f"### {listing['street']} - {listing['location']}\n")
+                    f.write(f"* **Price:** €{listing['price']:.2f} per month\n")
+                    f.write(f"* **Found on:** {listing['found_date']}\n")
+                    f.write(f"* **Properties:**\n{listing['properties']}\n")
+                    f.write(f"* [View listing]({listing['link']})\n\n")
+            else:
+                f.write("No new listings found under €1400 at this time.\n\n")
             
-            for listing in self.listings:
-                f.write(f"## {listing['street']} - {listing['location']}\n")
-                f.write(f"* **Price:** €{listing['price']:.2f} per month\n")
-                f.write(f"* **Properties:**\n{listing['properties']}\n")
-                f.write(f"* [View listing]({listing['link']})\n\n")
+            # Keep existing content (excluding header)
+            if existing_content:
+                existing_sections = existing_content.split('\n')[3:]  # Skip the header and update time
+                if existing_sections:
+                    f.write("## Previous Listings\n\n")
+                    f.write('\n'.join(existing_sections))
 
 def main():
     try:
         scraper = RotsvastScraper()
         scraper.scrape_all_pages()
         scraper.update_readme()
+        scraper.save_history()
     except Exception as e:
         print(f"Fatal error: {str(e)}")
         raise
