@@ -89,7 +89,7 @@ class RotsvastScraper:
             price_text = price_element.text.strip()
             price = self.parse_price(price_text)
             
-            if not price or price > 1400:
+            if not price or price > 1400 and price < 600:
                 return None
                 
             street = listing.find('div', class_='residence-street')
