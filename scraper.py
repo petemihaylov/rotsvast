@@ -89,7 +89,7 @@ class RotsvastScraper:
             price_text = price_element.text.strip()
             price = self.parse_price(price_text)
             
-            if price > 1400 and price < 600:
+            if not price or price < 600 or price > 1400:
                 return None
                 
             street = listing.find('div', class_='residence-street')
@@ -203,7 +203,7 @@ class RotsvastScraper:
         
         # Write updated README with all unique listings
         with open('README.md', 'w', encoding='utf-8') as f:
-            f.write("# Eindhoven Housing Listings\n\n")
+            f.write("# Eindhoven Housing Listings (€600-€1400)\n\n")
             f.write(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
             
             # Write all listings, sorted by date (newest first)
@@ -214,7 +214,7 @@ class RotsvastScraper:
             )
             
             if all_listings_sorted:
-                f.write(f"Found {len(all_listings_sorted)} listings under €1400:\n\n")
+                f.write(f"Found {len(all_listings_sorted)} listings between €600-€1400:\n\n")
                 for listing in all_listings_sorted:
                     f.write(f"### {listing['street']} - {listing['location']}\n")
                     f.write(f"* **Price:** €{listing['price']:.2f} per month\n")
