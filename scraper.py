@@ -13,14 +13,6 @@ class RotsvastScraper:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-            'Sec-Fetch-Dest': 'document',
-            'Sec-Fetch-Mode': 'navigate',
-            'Sec-Fetch-Site': 'none',
-            'Sec-Fetch-User': '?1',
-            'Cache-Control': 'max-age=0'
         }
         self.listings = []
         self.session = self._create_session()
@@ -28,9 +20,9 @@ class RotsvastScraper:
     def _create_session(self):
         session = requests.Session()
         retry_strategy = Retry(
-            total=5,  # number of retries
-            backoff_factor=1,  # wait 1, 2, 4, 8, 16 seconds between retries
-            status_forcelist=[429, 500, 502, 503, 504],  # HTTP status codes to retry on
+            total=5,
+            backoff_factor=1,
+            status_forcelist=[429, 500, 502, 503, 504],
         )
         adapter = HTTPAdapter(max_retries=retry_strategy)
         session.mount("https://", adapter)
@@ -39,12 +31,11 @@ class RotsvastScraper:
 
     def get_page_content(self, page_number):
         params = {
-            'page': page_number,
             'type': 2,
-            'office': 'RV014'
+            'office': 'RV014',
+            'page': page_number
         }
         try:
-            # Add delay between requests
             time.sleep(2)
             response = self.session.get(
                 self.base_url, 
@@ -58,10 +49,23 @@ class RotsvastScraper:
             print(f"Error fetching page {page_number}: {str(e)}")
             raise
 
+    def parse_price(self, price_text):
+        # Remove everything except digits, dots, and commas
+        cleaned = ''.join(c for c in price_text if c.isdigit() or c in '.,')
+        # Convert price like "1.300,00" to float
+        try:
+            if ',' in cleaned:
+                # Replace dots with nothing (for thousands) and comma with dot
+                cleaned = cleaned.replace('.', '').replace(',', '.')
+            return float(cleaned)
+        except ValueError:
+            print(f"Could not parse price: {price_text}")
+            return None
+
     def parse_listing(self, listing):
         try:
             location = listing.find('div', class_='residence-zipcode-place')
-            if not location or 'Eindhoven' not in location.text.strip():
+            if not location:
                 return None
             
             price_element = listing.find('div', class_='residence-price')
@@ -69,26 +73,31 @@ class RotsvastScraper:
                 return None
                 
             price_text = price_element.text.strip()
-            # Extract numeric value from price
-            price = float(''.join(filter(str.isdigit, price_text)))
+            price = self.parse_price(price_text)
             
-            if price > 1400:
+            if not price or price > 1400:
                 return None
                 
-            title = listing.find('div', class_='residence-title')
-            if not title:
+            street = listing.find('div', class_='residence-street')
+            if not street:
                 return None
-                
-            title = title.text.strip()
-            link = listing.find('a')
+            
+            # Get the link from the clickable-block
+            link = listing.find('a', class_='clickable-block')
             if not link:
                 return None
                 
+            # Get properties
+            properties_div = listing.find('div', class_='residence-properties')
+            properties = properties_div.text.strip() if properties_div else "No properties listed"
+                
             return {
-                'title': title,
+                'title': f"{street.text.strip()} - {location.text.strip()}",
                 'location': location.text.strip(),
+                'street': street.text.strip(),
                 'price': price,
                 'link': f"https://www.rotsvast.nl{link['href']}",
+                'properties': properties
             }
         except Exception as e:
             print(f"Error parsing listing: {e}")
@@ -98,19 +107,22 @@ class RotsvastScraper:
         page_number = 1
         max_retries = 3
         retry_count = 0
+        has_more_pages = True
 
-        while retry_count < max_retries:
+        while has_more_pages and retry_count < max_retries:
             try:
+                print(f"Scraping page {page_number}...")
                 html_content = self.get_page_content(page_number)
                 soup = BeautifulSoup(html_content, 'html.parser')
                 
                 # Parse listings on current page
-                listings_elements = soup.find_all('div', class_='residence-item')
+                listings_elements = soup.find_all('div', class_='residence-gallery')
                 
                 if not listings_elements:
                     print(f"No listings found on page {page_number}")
                     break
                 
+                print(f"Found {len(listings_elements)} listings on page {page_number}")
                 for listing in listings_elements:
                     parsed_listing = self.parse_listing(listing)
                     if parsed_listing:
@@ -119,6 +131,8 @@ class RotsvastScraper:
                 # Check if there's a next page
                 multipage = soup.find('div', class_='multipage')
                 if not multipage or multipage.find('span', class_='disabled next'):
+                    has_more_pages = False
+                    print("No more pages to scrape")
                     break
                     
                 page_number += 1
@@ -129,7 +143,7 @@ class RotsvastScraper:
                 if retry_count >= max_retries:
                     print(f"Max retries reached for page {page_number}")
                     break
-                time.sleep(5)  # Wait before retrying
+                time.sleep(5)
 
     def update_readme(self):
         with open('README.md', 'w', encoding='utf-8') as f:
@@ -137,15 +151,15 @@ class RotsvastScraper:
             f.write(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
             
             if not self.listings:
-                f.write("No listings found under €1400 in Eindhoven at this time.\n")
+                f.write("No listings found under €1400 at this time.\n")
                 return
                 
-            f.write("Listings under €1400 in Eindhoven:\n\n")
+            f.write(f"Found {len(self.listings)} listings under €1400:\n\n")
             
             for listing in self.listings:
-                f.write(f"## {listing['title']}\n")
-                f.write(f"* Location: {listing['location']}\n")
-                f.write(f"* Price: €{listing['price']:.2f}\n")
+                f.write(f"## {listing['street']} - {listing['location']}\n")
+                f.write(f"* **Price:** €{listing['price']:.2f} per month\n")
+                f.write(f"* **Properties:**\n{listing['properties']}\n")
                 f.write(f"* [View listing]({listing['link']})\n\n")
 
 def main():
