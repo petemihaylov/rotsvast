@@ -91,7 +91,7 @@ class RotsvastScraper:
             
             if price > 1400:
                 return None
-
+    
             if price < 600:
                 return None
                 
@@ -106,8 +106,15 @@ class RotsvastScraper:
             properties_div = listing.find('div', class_='residence-properties')
             properties = properties_div.text.strip() if properties_div else "No properties listed"
             
-            full_link = f"https://www.rotsvast.nl{link['href']}"
-                
+            # Fixing link construction
+            href = link['href']
+            if href.startswith("https://"):
+                full_link = href
+            elif href.startswith("/"):
+                full_link = f"https://www.rotsvast.nl{href}"
+            else:
+                full_link = f"https://www.rotsvast.nl/{href}"
+            
             return {
                 'title': f"{street.text.strip()} - {location.text.strip()}",
                 'location': location.text.strip(),
