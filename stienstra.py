@@ -90,15 +90,18 @@ class StienstraScraper:
 
     def parse_price(self, price_text):
         try:
-            # Remove the euro symbol and 'per month' text
-            price_text = price_text.replace('€', '').replace('per month', '').strip()
-            # Remove any spaces and dots
+            # Remove the euro symbol and various month texts (Dutch and English)
+            price_text = price_text.replace('€', '')\
+                                 .replace('per month', '')\
+                                 .replace('per maand', '')\
+                                 .strip()
+            # Remove any spaces and dots (thousand separators)
             cleaned = price_text.replace(' ', '').replace('.', '')
-            # Remove the comma
+            # Replace comma with dot for decimal places if it exists
             cleaned = cleaned.replace(',', '')
             return float(cleaned)
-        except ValueError:
-            print(f"Could not parse price: {price_text}")
+        except ValueError as e:
+            print(f"Could not parse price: {price_text}, Error: {str(e)}")
             return None
 
     def parse_listing(self, listing):
@@ -130,12 +133,27 @@ class StienstraScraper:
             amenities = listing.find('div', class_='info-row amenities')
             features = []
             if amenities:
-                # Get basic features
+                # Get basic features with icons
                 features_p = amenities.find('p')
                 if features_p:
-                    for span in features_p.find_all('span'):
-                        if span.text.strip():
-                            features.append(span.text.strip())
+                    spans = features_p.find_all('span')
+                    for span in spans:
+                        text = span.text.strip()
+                        if text:
+                            # Check for bed icon - bedrooms
+                            if span.find('i', class_='fa-bed'):
+                                features.append(f"{text} slaapkamers (bedrooms)")
+                            # Check for home icon - living area
+                            elif span.find('i', class_='fa-home'):
+                                features.append(f"Woonoppervlakte (Living area): {text}")
+                            # Check for calendar icon - year
+                            elif span.find('i', class_='fa-calendar'):
+                                features.append(f"Bouwjaar (Built in): {text}")
+                            # Check for key icon - availability
+                            elif span.find('i', class_='fa-key'):
+                                features.append(f"Beschikbaar vanaf (Available from): {text}")
+                            else:
+                                features.append(text)
                 
                 # Get additional features with checkmarks
                 for p in amenities.find_all('p'):
@@ -291,7 +309,7 @@ class StienstraScraper:
                             f.write(f"  - {feature}\n")
                     f.write(f"* [View listing]({listing['link']})\n\n")
             else:
-                f.write(f"No listings found under €{self.config['price_range']['max']} at this time.\n")
+                f.write("No listings found under €1400 at this time.\n")
 
 def main():
     try:
