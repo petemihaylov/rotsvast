@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update:
+  scrape:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -33,7 +33,7 @@ jobs:
 
       - name: Scrape Stienstra
         run: |
-          python strienstra.py
+          python stienstra.py
 
       - name: Scrape HouseHunting
         run: |
