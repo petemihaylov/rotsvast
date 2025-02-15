@@ -120,18 +120,28 @@ class RotsvastScraper:
         try:
             # Clean up the text - remove newlines and excessive whitespace
             price_text = ' '.join(price_text.split())
+            logger.debug(f"Cleaned price text: {price_text}")
             
-            # Remove extra text we don't need
-            price_text = price_text.replace('€', '')\
-                                 .replace('per month', '')\
-                                 .replace('per maand', '')\
-                                 .replace('excl.', '')\
-                                 .replace('incl.', '')\
-                                 .strip()
+            # Get the first part that contains the number (before "per month")
+            if "per month" in price_text:
+                price_text = price_text.split("per month")[0]
             
-            # Remove any spaces, dots (thousand separators), and commas (decimal separator)
-            cleaned = price_text.replace(' ', '').replace('.', '').replace(',', '')
-            return float(cleaned)
+            # Remove everything except numbers, dots and commas
+            price_text = price_text.replace('€', '').strip()
+            logger.debug(f"Price after basic cleaning: {price_text}")
+            
+            # Convert the Dutch number format (1.234,56) to float
+            # First, remove the thousand separator (.)
+            if '.' in price_text and ',' in price_text:
+                price_text = price_text.replace('.', '')
+            # Then replace the decimal comma with a dot
+            price_text = price_text.replace(',', '.')
+            
+            logger.debug(f"Final price text to convert: {price_text}")
+            price = float(price_text)
+            logger.info(f"Successfully parsed price: {price}")
+            return price
+            
         except ValueError as e:
             logger.error(f"Could not parse price '{price_text}': {str(e)}")
             return None
