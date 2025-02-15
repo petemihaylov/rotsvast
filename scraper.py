@@ -106,6 +106,19 @@ class RotsvastScraper:
             properties_div = listing.find('div', class_='residence-properties')
             properties = properties_div.text.strip() if properties_div else "No properties listed"
             
+            # Extract image URL
+            image_div = listing.find('div', class_='residence-image')
+            image_url = None
+            if image_div:
+                img_tag = image_div.find('img')
+                if img_tag and 'src' in img_tag.attrs:
+                    image_url = img_tag['src']
+                    # Ensure the URL is absolute
+                    if image_url.startswith("//"):
+                        image_url = f"https:{image_url}"
+                    elif not image_url.startswith("http"):
+                        image_url = f"https://www.rotsvast.nl{image_url}"
+            
             # Fixing link construction
             href = link['href']
             if href.startswith("https://"):
@@ -122,6 +135,7 @@ class RotsvastScraper:
                 'price': price,
                 'link': full_link,
                 'properties': properties,
+                'image_url': image_url,
                 'found_date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
         except Exception as e:
@@ -199,6 +213,11 @@ class RotsvastScraper:
                             street = section.split('\n')[0].strip()
                             properties = section.split('**Properties:**\n')[1].split('\n* [View')[0]
                             
+                            # Try to extract image URL if it exists
+                            image_url = None
+                            if '![Property Image](' in section:
+                                image_url = section.split('![Property Image](')[1].split(')')[0]
+                            
                             all_listings[link] = {
                                 'title': f"{street} - {location}",
                                 'location': location,
@@ -206,6 +225,7 @@ class RotsvastScraper:
                                 'price': price,
                                 'link': link,
                                 'properties': properties,
+                                'image_url': image_url,
                                 'found_date': found_date
                             }
             except Exception as e:
@@ -227,6 +247,8 @@ class RotsvastScraper:
                 f.write(f"Found {len(all_listings_sorted)} listings under €1400:\n\n")
                 for listing in all_listings_sorted:
                     f.write(f"### {listing['street']} - {listing['location']}\n")
+                    if listing.get('image_url'):
+                        f.write(f"![Property Image]({listing['image_url']})\n\n")
                     f.write(f"* **Price:** €{listing['price']:.2f} per month\n")
                     f.write(f"* **Found on:** {listing['found_date']}\n")
                     f.write(f"* **Properties:**\n{listing['properties']}\n")
