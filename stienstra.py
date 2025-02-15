@@ -8,7 +8,7 @@ from urllib3.util.retry import Retry
 import os
 
 class StienstraScraper:
-    def __init__(self, base_url="https://www.stienstra.nl/uitgebreid-zoeken"):
+    def __init__(self, base_url="https://www.stienstra.nl/uitgebreid-zoeken", config_file="config.json"):
         self.base_url = base_url
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -19,6 +19,28 @@ class StienstraScraper:
         self.session = self._create_session()
         self.history_file = 'stienstra_history.json'
         self.known_listings = self.load_history()
+        self.config = self.load_config(config_file)
+        
+    def load_config(self, config_file):
+        if not os.path.exists(config_file):
+            # Default configuration
+            return {
+                "price_range": {"min": 600, "max": 1400},
+                "locations": ["Eindhoven"],
+                "refresh_delay": 2,
+                "max_retries": 3
+            }
+        try:
+            with open(config_file, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            print("Error reading config file, using defaults")
+            return {
+                "price_range": {"min": 600, "max": 1400},
+                "locations": ["Eindhoven"],
+                "refresh_delay": 2,
+                "max_retries": 3
+            }
 
     def _create_session(self):
         session = requests.Session()
@@ -53,7 +75,7 @@ class StienstraScraper:
             'page': page_number
         }
         try:
-            time.sleep(2)  # Polite delay between requests
+            time.sleep(self.config["refresh_delay"])  # Polite delay between requests
             response = self.session.get(
                 self.base_url,
                 params=params,
@@ -97,10 +119,7 @@ class StienstraScraper:
             price_text = price_elem.text.strip()
             price = self.parse_price(price_text)
 
-            if price > 1400:
-                return None
-
-            if price < 600:
+            if not price or price > 1400:
                 return None
 
             # Get property type
@@ -148,7 +167,7 @@ class StienstraScraper:
 
     def scrape_all_pages(self):
         page_number = 1
-        max_retries = 3
+        max_retries = self.config["max_retries"]
         retry_count = 0
         has_more_pages = True
 
@@ -256,7 +275,7 @@ class StienstraScraper:
             )
             
             if all_listings_sorted:
-                f.write(f"Found {len(all_listings_sorted)} listings under €1400:\n\n")
+                f.write(f"Found {len(all_listings_sorted)} listings between €{self.config['price_range']['min']} and €{self.config['price_range']['max']}:\n\n")
                 for listing in all_listings_sorted:
                     f.write(f"### {listing['title']}\n")
                     if listing.get('image_url'):
@@ -272,7 +291,7 @@ class StienstraScraper:
                             f.write(f"  - {feature}\n")
                     f.write(f"* [View listing]({listing['link']})\n\n")
             else:
-                f.write("No listings found under €1400 at this time.\n")
+                f.write(f"No listings found under €{self.config['price_range']['max']} at this time.\n")
 
 def main():
     try:
