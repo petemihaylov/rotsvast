@@ -282,7 +282,8 @@ class StienstraScraper:
         # Write updated README
         with open('README.md', 'w', encoding='utf-8') as f:
             # Write header
-            f.write("# Eindhoven Housing Listings\n\n")
+            f.write("# Eindhoven Housing Listings")
+            f.write("Please consider giving it a ⭐! Your support helps make the project more visible to others who might benefit from it.")
             f.write(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
             
             # Write all listings, sorted by date (newest first)
