@@ -249,7 +249,7 @@ class RotsvastScraper:
                 for listing in all_listings_sorted:
                     f.write(f"### {listing['street']} - {listing['location']}\n")
                     if listing.get('image_url'):
-                        f.write(f"![Property Image]({listing['image_url']})\n\n")
+                        f.write(f'<img src="{listing["image_url"]}" alt="Property Image" width="600"/>\n\n')
                     f.write(f"* **Price:** €{listing['price']:.2f} per month\n")
                     f.write(f"* **Found on:** {listing['found_date']}\n")
                     f.write(f"* **Properties:**\n{listing['properties']}\n")
