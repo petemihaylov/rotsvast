@@ -330,6 +330,7 @@ class RotsvastScraper:
             # Write updated README
             with open('README.md', 'w', encoding='utf-8') as f:
                 f.write("# Eindhoven Housing Listings\n\n")
+                f.write("#### If you find this project helpful or interesting, please consider giving it a star!⭐ \n\nYour support helps make the project more visible to others who might benefit from it.")
                 f.write(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
                 
                 all_listings_sorted = sorted(
