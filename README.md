@@ -1,3 +1,95 @@
-# Housing Listings
+# Eindhoven Housing ListingsPlease consider giving it a ⭐! Your support helps make the project more visible to others who might benefit from it.Last updated: 2025-02-15 12:14:20
 
-Last cleared: 2025-02-15
+Found 11 listings between €900 and €1400:
+
+### Merovingersweg - Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10332/files/photos/export/67acb52881789.jpg?width=600" alt="Property Image" width="400"/>
+
+* **Price:** €1275.00 per month
+* **Found on:** 2025-02-15 12:14:20
+* **Source:** HouseHunting
+* **Status:** New
+* [View listing](https://househunting.nl/en/woningaanbod/h103322425-merovingersweg-eindhoven/)
+
+### Boutenslaan - Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10332/files/photos/export/677d3b3717987.jpg?width=600" alt="Property Image" width="400"/>
+
+* **Price:** €1112.00 per month
+* **Found on:** 2025-02-15 12:14:20
+* **Source:** HouseHunting
+* [View listing](https://househunting.nl/en/woningaanbod/h103322401-boutenslaan-eindhoven/)
+
+### Boutenslaan - Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10332/files/photos/export/1590.60793e80be500.jpg?width=600" alt="Property Image" width="400"/>
+
+* **Price:** €900.00 per month
+* **Found on:** 2025-02-15 12:14:20
+* **Source:** HouseHunting
+* **Status:** New
+* [View listing](https://househunting.nl/en/woningaanbod/h103321590-boutenslaan-eindhoven/)
+
+### Boschdijk - Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10332/files/photos/export/53240108.1663258043-592.jpg?width=600" alt="Property Image" width="400"/>
+
+* **Price:** €995.00 per month
+* **Found on:** 2025-02-15 12:14:20
+* **Source:** HouseHunting
+* **Status:** New
+* [View listing](https://househunting.nl/en/woningaanbod/h103321934-boschdijk-eindhoven/)
+
+### Vlokhovenseweg - 5625WR Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/17bf3efe.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1075.00 per month
+* **Found on:** 2025-02-15 12:14:13
+* **Source:** Rotsvast
+* [View listing](https://www.rotsvast.nl/en/eindhoven-vlokhovenseweg-H1026319782/)
+
+### Naberpad - 5624GG Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/e0e11521.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1020.00 per month
+* **Found on:** 2025-02-15 12:14:13
+* **Source:** Rotsvast
+* [View listing](https://www.rotsvast.nl/en/eindhoven-naberpad-H1026319562/)
+
+### Beerseweg - 5087TP Diessen
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/1fa81966.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1250.00 per month
+* **Found on:** 2025-02-15 12:14:09
+* **Source:** Rotsvast
+* [View listing](https://www.rotsvast.nl/en/diessen-beerseweg-H1026319591/)
+
+### Vlokhovenseweg - 5625WR Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/196d7208.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1050.00 per month
+* **Found on:** 2025-02-15 12:14:05
+* **Source:** Rotsvast
+* [View listing](https://www.rotsvast.nl/en/eindhoven-vlokhovenseweg-H1026319635/)
+
+### Morgensop - 5492TT Sint-Oedenrode
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/8bb5bc06.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1300.00 per month
+* **Found on:** 2025-02-15 12:14:02
+* **Source:** Rotsvast
+* [View listing](https://www.rotsvast.nl/en/sint-oedenrode-morgensop-H1026319895/)
+
+### Wal - 5611GE Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5a749792dd5b5_365336-wal-te-eindhoven.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1013.00 per month
+* **Found on:** 2025-02-15 12:14:02
+* **Source:** Rotsvast
+* [View listing](https://www.rotsvast.nl/en/eindhoven-wal-H1026310498/)
+
+### Veestraat - 5701RD Helmond
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/19202.612f7b54eb0c5.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €906.00 per month
+* **Found on:** 2025-02-15 12:14:02
+* **Source:** Rotsvast
+* [View listing](https://www.rotsvast.nl/en/helmond-veestraat-H1026319202/)
+
