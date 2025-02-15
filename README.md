@@ -1,12 +1,12 @@
 # Eindhoven Housing Listings
 
-Last updated: 2025-02-14 21:44:03
+Last updated: 2025-02-15 01:34:54
 
 Found 10 listings under €1400:
 
 ### Vlokhovenseweg - 5625WR Eindhoven
 * **Price:** €1075.00 per month
-* **Found on:** 2025-02-14 21:44:03
+* **Found on:** 2025-02-15 01:34:54
 * **Properties:**
 - Available from 03-03-2025
 				- Upholstered				- Floor area 25 m2
@@ -15,7 +15,7 @@ Found 10 listings under €1400:
 
 ### Biesterweg - 5615AE Eindhoven
 * **Price:** €887.00 per month
-* **Found on:** 2025-02-14 21:44:03
+* **Found on:** 2025-02-15 01:34:54
 * **Properties:**
 - Available immediately
 				- Furnished				- Floor area 50 m2
@@ -24,7 +24,7 @@ Found 10 listings under €1400:
 
 ### Noord Koninginnewal - 5701NJ Helmond
 * **Price:** €675.00 per month
-* **Found on:** 2025-02-14 21:44:03
+* **Found on:** 2025-02-15 01:34:54
 * **Properties:**
 - Available from 01-04-2025
 				- Upholstered				- Floor area 21 m2
@@ -33,7 +33,7 @@ Found 10 listings under €1400:
 
 ### Willemstraat - 5611HC Eindhoven
 * **Price:** €752.00 per month
-* **Found on:** 2025-02-14 21:44:03
+* **Found on:** 2025-02-15 01:34:54
 * **Properties:**
 - Available immediately
 				- Furnished				- Floor area 12 m2
@@ -42,7 +42,7 @@ Found 10 listings under €1400:
 
 ### Naberpad - 5624GG Eindhoven
 * **Price:** €1020.00 per month
-* **Found on:** 2025-02-14 21:44:03
+* **Found on:** 2025-02-15 01:34:54
 * **Properties:**
 - Available immediately
 				- Upholstered				- Floor area 19 m2
@@ -51,7 +51,7 @@ Found 10 listings under €1400:
 
 ### Beerseweg - 5087TP Diessen
 * **Price:** €1250.00 per month
-* **Found on:** 2025-02-14 21:43:59
+* **Found on:** 2025-02-15 01:34:50
 * **Properties:**
 - Available immediately
 				- Furnished				- Floor area 30 m2
@@ -60,7 +60,7 @@ Found 10 listings under €1400:
 
 ### Vlokhovenseweg - 5625WR Eindhoven
 * **Price:** €1050.00 per month
-* **Found on:** 2025-02-14 21:43:55
+* **Found on:** 2025-02-15 01:34:46
 * **Properties:**
 - Available immediately
 				- Upholstered				- Floor area 12 m2
@@ -69,7 +69,7 @@ Found 10 listings under €1400:
 
 ### Morgensop - 5492TT Sint-Oedenrode
 * **Price:** €1300.00 per month
-* **Found on:** 2025-02-14 21:43:52
+* **Found on:** 2025-02-15 01:34:41
 * **Properties:**
 - Available immediately
 				- Furnished				- Floor area 74 m2
@@ -78,7 +78,7 @@ Found 10 listings under €1400:
 
 ### Wal - 5611GE Eindhoven
 * **Price:** €1013.00 per month
-* **Found on:** 2025-02-14 21:43:52
+* **Found on:** 2025-02-15 01:34:41
 * **Properties:**
 - Available from 01-03-2025
 				- Upholstered				- Floor area 69 m2
@@ -87,7 +87,7 @@ Found 10 listings under €1400:
 
 ### Veestraat - 5701RD Helmond
 * **Price:** €906.00 per month
-* **Found on:** 2025-02-14 21:43:52
+* **Found on:** 2025-02-15 01:34:41
 * **Properties:**
 - Available from 01-03-2025
 				- Upholstered				- Floor area 46 m2
