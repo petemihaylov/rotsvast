@@ -67,10 +67,13 @@ class StienstraScraper:
             raise
 
     def parse_price(self, price_text):
-        cleaned = ''.join(c for c in price_text if c.isdigit() or c in '.,')
         try:
-            if ',' in cleaned:
-                cleaned = cleaned.replace('.', '').replace(',', '.')
+            # Remove the euro symbol and 'per month' text
+            price_text = price_text.replace('€', '').replace('per month', '').strip()
+            # Remove any spaces and dots
+            cleaned = price_text.replace(' ', '').replace('.', '')
+            # Remove the comma
+            cleaned = cleaned.replace(',', '')
             return float(cleaned)
         except ValueError:
             print(f"Could not parse price: {price_text}")
@@ -94,7 +97,10 @@ class StienstraScraper:
             price_text = price_elem.text.strip()
             price = self.parse_price(price_text)
 
-            if not price or price > 1400:
+            if price > 1400:
+                return None
+
+            if price < 600
                 return None
 
             # Get property type
