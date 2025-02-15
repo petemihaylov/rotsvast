@@ -100,7 +100,7 @@ class StienstraScraper:
             if price > 1400:
                 return None
 
-            if price < 600
+            if price < 600:
                 return None
 
             # Get property type
