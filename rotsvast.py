@@ -118,12 +118,18 @@ class RotsvastScraper:
 
     def parse_price(self, price_text: str) -> Optional[float]:
         try:
-            # Remove the euro symbol and various month texts
+            # Clean up the text - remove newlines and excessive whitespace
+            price_text = ' '.join(price_text.split())
+            
+            # Remove extra text we don't need
             price_text = price_text.replace('€', '')\
                                  .replace('per month', '')\
                                  .replace('per maand', '')\
+                                 .replace('excl.', '')\
+                                 .replace('incl.', '')\
                                  .strip()
-            # Remove any spaces, dots, and commas
+            
+            # Remove any spaces, dots (thousand separators), and commas (decimal separator)
             cleaned = price_text.replace(' ', '').replace('.', '').replace(',', '')
             return float(cleaned)
         except ValueError as e:
