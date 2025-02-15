@@ -344,4 +344,16 @@ class RotsvastScraper:
 def main():
     try:
         logger.info("Starting Rotsvast scraper")
-        scraper = RotsvastS
+        scraper = RotsvastScraper()
+        scraper.scrape_all_pages()
+        scraper.update_readme()
+        scraper.save_history()
+        logger.info("Scraping completed successfully")
+    except Exception as e:
+        logger.error(f"Fatal error in main: {str(e)}")
+        raise
+    finally:
+        logger.info("Scraper finished execution")
+
+if __name__ == "__main__":
+    main()
