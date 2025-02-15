@@ -1,7 +1,7 @@
 {
     "price_range": {
-        "min": 900,
-        "max": 1400
+        "min": 700,
+        "max": 1300
     },
     "locations": ["Eindhoven"],
     "refresh_delay": 2,
