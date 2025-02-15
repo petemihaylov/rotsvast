@@ -106,18 +106,19 @@ class RotsvastScraper:
             properties_div = listing.find('div', class_='residence-properties')
             properties = properties_div.text.strip() if properties_div else "No properties listed"
             
-            # Extract image URL
+            # Extract image URL from background-image style
             image_div = listing.find('div', class_='residence-image')
             image_url = None
-            if image_div:
-                img_tag = image_div.find('img')
-                if img_tag and 'src' in img_tag.attrs:
-                    image_url = img_tag['src']
-                    # Ensure the URL is absolute
-                    if image_url.startswith("//"):
-                        image_url = f"https:{image_url}"
-                    elif not image_url.startswith("http"):
-                        image_url = f"https://www.rotsvast.nl{image_url}"
+            if image_div and 'style' in image_div.attrs:
+                style = image_div['style']
+                if 'background-image:url(' in style:
+                    # Extract URL between url( and )
+                    image_url = style.split('url(')[1].split(')')[0]
+                    # Remove any quotes around the URL
+                    image_url = image_url.strip("'\"")
+                    # Remove any query parameters
+                    if '?' in image_url:
+                        image_url = image_url.split('?')[0]
             
             # Fixing link construction
             href = link['href']
