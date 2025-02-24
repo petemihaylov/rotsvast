@@ -1,7 +1,7 @@
 name: Scrape Housing Listings
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Runs every 6 hours
+    - cron: '0 */3 * * *'  # Runs every 6 hours
   workflow_dispatch:
 
 jobs:
