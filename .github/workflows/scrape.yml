@@ -34,10 +34,6 @@ jobs:
       - name: Scrape Stienstra
         run: |
           python stienstra.py
-
-      - name: Scrape HouseHunting
-        run: |
-          python househunting.py
       
       - name: Update README
         run: |
