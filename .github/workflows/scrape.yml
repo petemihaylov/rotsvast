@@ -30,10 +30,6 @@ jobs:
       - name: Scrape Rotsvast
         run: |
           python rotsvast.py
-
-      - name: Scrape Stienstra
-        run: |
-          python stienstra.py
       
       - name: Update README
         run: |
