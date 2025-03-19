@@ -4,15 +4,15 @@ Please consider giving this repo a ⭐
 
 Your support helps make the project more visible to others who might benefit from it.
 
-Last updated: 2025-03-19 12:18:55
+Last updated: 2025-03-19 13:20:35
 
-Found 9 listings between €700 and €1500:
+Found 10 listings between €700 and €1500:
 
 ### Beerseweg - 5087TP Diessen
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/1fa81966.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1250.00 per month
-* **Found on:** 2025-03-19 12:18:51
+* **Found on:** 2025-03-19 13:20:31
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -24,7 +24,7 @@ Found 9 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/6a1f7d3e.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1500.00 per month
-* **Found on:** 2025-03-19 12:18:51
+* **Found on:** 2025-03-19 13:20:31
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -36,7 +36,7 @@ Found 9 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/17bf3efe.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1075.00 per month
-* **Found on:** 2025-03-19 12:18:51
+* **Found on:** 2025-03-19 13:20:31
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -48,7 +48,7 @@ Found 9 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/196d7208.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1050.00 per month
-* **Found on:** 2025-03-19 12:18:47
+* **Found on:** 2025-03-19 13:20:27
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -56,11 +56,23 @@ Found 9 listings between €700 and €1500:
 				- 0 bedrooms
 * [View listing](https://www.rotsvast.nl/en/eindhoven-vlokhovenseweg-H1026319635/)
 
+### Willem van Hornestraat - 5611PT Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52251043.1573740301-889.JPG" alt="Property Image" width="400"/>
+
+* **Price:** €760.00 per month
+* **Found on:** 2025-03-19 13:20:23
+* **Source:** Rotsvast
+* **Properties:**
+- Available immediately
+				- Furnished				- Floor area 40 m2
+				- 1 bedroom
+* [View listing](https://www.rotsvast.nl/en/eindhoven-willem-van-hornestraat-H1026318703/)
+
 ### Schouwbroekseweg - 5616NV Eindhoven
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/2043f0d6.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €714.00 per month
-* **Found on:** 2025-03-19 12:18:44
+* **Found on:** 2025-03-19 13:20:23
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -72,7 +84,7 @@ Found 9 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52785902.1618327689-833.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €920.00 per month
-* **Found on:** 2025-03-19 12:18:44
+* **Found on:** 2025-03-19 13:20:23
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -84,7 +96,7 @@ Found 9 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/fcee2b8b.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1039.00 per month
-* **Found on:** 2025-03-19 12:18:44
+* **Found on:** 2025-03-19 13:20:23
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -92,27 +104,27 @@ Found 9 listings between €700 and €1500:
 				- 1 bedroom
 * [View listing](https://www.rotsvast.nl/en/deurne-albert-schweitzerstraat-H1026319902/)
 
+### Julianastraat - 5611HS Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5a7497921c29d_354593-julianastraat-te-eindhoven.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1100.00 per month
+* **Found on:** 2025-03-19 13:20:20
+* **Source:** Rotsvast
+* **Properties:**
+- Available from 01-05-2025
+				- Furnished				- Floor area 37 m2
+				- 1 bedroom
+* [View listing](https://www.rotsvast.nl/en/eindhoven-julianastraat-H102631699/)
+
 ### Pastoriestraat - 5612EJ Eindhoven
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/51664574.1526647095-730.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €1050.00 per month
-* **Found on:** 2025-03-19 12:18:40
+* **Found on:** 2025-03-19 13:20:20
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
 				- Furnished				- Floor area 60 m2
 				- 1 bedroom
 * [View listing](https://www.rotsvast.nl/en/eindhoven-pastoriestraat-H1026317926/)
-
-### Willem van Hornestraat - 5611PT Eindhoven
-<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52251043.1573740301-889.JPG" alt="Property Image" width="400"/>
-
-* **Price:** €760.00 per month
-* **Found on:** 2025-03-19 12:18:40
-* **Source:** Rotsvast
-* **Properties:**
-- Available immediately
-				- Furnished				- Floor area 40 m2
-				- 1 bedroom
-* [View listing](https://www.rotsvast.nl/en/eindhoven-willem-van-hornestraat-H1026318703/)
 
