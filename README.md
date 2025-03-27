@@ -4,7 +4,7 @@ Please consider giving this repo a ⭐
 
 Your support helps make the project more visible to others who might benefit from it.
 
-Last updated: 2025-03-27 03:26:30
+Last updated: 2025-03-27 04:12:50
 
 Found 12 listings between €700 and €1500:
 
@@ -12,7 +12,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5a7497921c29d_354593-julianastraat-te-eindhoven.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1100.00 per month
-* **Found on:** 2025-03-27 03:26:30
+* **Found on:** 2025-03-27 04:12:50
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-05-2025
@@ -24,7 +24,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/51664574.1526647095-730.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €1050.00 per month
-* **Found on:** 2025-03-27 03:26:30
+* **Found on:** 2025-03-27 04:12:50
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -36,7 +36,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52251043.1573740301-889.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €760.00 per month
-* **Found on:** 2025-03-27 03:26:30
+* **Found on:** 2025-03-27 04:12:50
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -48,7 +48,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/2043f0d6.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €714.00 per month
-* **Found on:** 2025-03-27 03:26:30
+* **Found on:** 2025-03-27 04:12:50
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -60,7 +60,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/fcee2b8b.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1039.00 per month
-* **Found on:** 2025-03-27 03:26:30
+* **Found on:** 2025-03-27 04:12:50
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -72,7 +72,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/6a1f7d3e.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1500.00 per month
-* **Found on:** 2025-03-27 03:26:30
+* **Found on:** 2025-03-27 04:12:50
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -84,7 +84,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/196d7208.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1050.00 per month
-* **Found on:** 2025-03-27 03:26:30
+* **Found on:** 2025-03-27 04:12:50
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -96,7 +96,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/1fa81966.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1250.00 per month
-* **Found on:** 2025-03-27 03:26:26
+* **Found on:** 2025-03-27 04:12:46
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -108,7 +108,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/67db059998d66.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1085.00 per month
-* **Found on:** 2025-03-27 03:26:18
+* **Found on:** 2025-03-27 04:12:38
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 15-04-2025
@@ -120,7 +120,7 @@ Found 12 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5044cd05.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €800.00 per month
-* **Found on:** 2025-03-27 03:26:18
+* **Found on:** 2025-03-27 04:12:38
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -128,7 +128,7 @@ Found 12 listings between €700 and €1500:
 				- 0 bedrooms
 * [View listing](https://www.rotsvast.nl/en/eindhoven-rijssellaan-H1026319508/)
 
-### Kasteel-Traverse - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond
+### Kasteel-Traverse - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond - 5701NR Helmond
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52785902.1618327689-833.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €920.00 per month
@@ -140,7 +140,7 @@ Found 12 listings between €700 and €1500:
 				- 2 bedrooms
 * [View listing](https://www.rotsvast.nl/en/helmond-kasteel-traverse-H1026319120/)
 
-### Vlokhovenseweg - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven
+### Vlokhovenseweg - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven - 5625WR Eindhoven
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/17bf3efe.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1075.00 per month
