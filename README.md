@@ -4,27 +4,15 @@ Please consider giving this repo a ⭐
 
 Your support helps make the project more visible to others who might benefit from it.
 
-Last updated: 2025-03-31 09:12:08
+Last updated: 2025-03-31 10:11:55
 
 Found 10 listings between €700 and €1500:
-
-### Vlokhovenseweg - 5625WR Eindhoven
-<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/196d7208.jpg" alt="Property Image" width="400"/>
-
-* **Price:** €1050.00 per month
-* **Found on:** 2025-03-31 09:12:08
-* **Source:** Rotsvast
-* **Properties:**
-- Available immediately
-				- Upholstered				- Floor area 12 m2
-				- 0 bedrooms
-* [View listing](https://www.rotsvast.nl/en/eindhoven-vlokhovenseweg-H1026319635/)
 
 ### Beerseweg - 5087TP Diessen
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/1fa81966.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1250.00 per month
-* **Found on:** 2025-03-31 09:12:05
+* **Found on:** 2025-03-31 10:11:52
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -36,7 +24,7 @@ Found 10 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5044cd05.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €800.00 per month
-* **Found on:** 2025-03-31 09:12:05
+* **Found on:** 2025-03-31 10:11:52
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -48,7 +36,7 @@ Found 10 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5a7497921c29d_354593-julianastraat-te-eindhoven.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1100.00 per month
-* **Found on:** 2025-03-31 09:12:05
+* **Found on:** 2025-03-31 10:11:52
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-05-2025
@@ -60,7 +48,7 @@ Found 10 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/51664574.1526647095-730.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €1050.00 per month
-* **Found on:** 2025-03-31 09:12:05
+* **Found on:** 2025-03-31 10:11:52
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -72,7 +60,7 @@ Found 10 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52251043.1573740301-889.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €760.00 per month
-* **Found on:** 2025-03-31 09:12:05
+* **Found on:** 2025-03-31 10:11:52
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -84,7 +72,7 @@ Found 10 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/2043f0d6.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €714.00 per month
-* **Found on:** 2025-03-31 09:12:05
+* **Found on:** 2025-03-31 10:11:52
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -96,7 +84,7 @@ Found 10 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/fcee2b8b.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1039.00 per month
-* **Found on:** 2025-03-31 09:12:05
+* **Found on:** 2025-03-31 10:11:52
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-04-2025
@@ -104,7 +92,31 @@ Found 10 listings between €700 and €1500:
 				- 1 bedroom
 * [View listing](https://www.rotsvast.nl/en/deurne-albert-schweitzerstraat-H1026319902/)
 
-### Koestraat - 5298AR Liempde
+### Vlokhovenseweg - 5625WR Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/196d7208.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1050.00 per month
+* **Found on:** 2025-03-31 10:11:52
+* **Source:** Rotsvast
+* **Properties:**
+- Available immediately
+				- Upholstered				- Floor area 12 m2
+				- 0 bedrooms
+* [View listing](https://www.rotsvast.nl/en/eindhoven-vlokhovenseweg-H1026319635/)
+
+### 1e Lieven de Keylaan - 5622GD Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/67db059998d66.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1085.00 per month
+* **Found on:** 2025-03-31 10:11:44
+* **Source:** Rotsvast
+* **Properties:**
+- Available from 15-04-2025
+				- Upholstered				- Floor area 69 m2
+				- 2 bedrooms
+* [View listing](https://www.rotsvast.nl/en/eindhoven-1e-lieven-de-keylaan-H1026319908/)
+
+### Koestraat - 5298AR Liempde - 5298AR Liempde
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/6a1f7d3e.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1500.00 per month
@@ -115,16 +127,4 @@ Found 10 listings between €700 and €1500:
 				- Upholstered				- Floor area 244 m2
 				- 4 bedrooms
 * [View listing](https://www.rotsvast.nl/en/liempde-koestraat-H1026319896/)
-
-### 1e Lieven de Keylaan - 5622GD Eindhoven
-<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/67db059998d66.jpg" alt="Property Image" width="400"/>
-
-* **Price:** €1085.00 per month
-* **Found on:** 2025-03-31 09:11:57
-* **Source:** Rotsvast
-* **Properties:**
-- Available from 15-04-2025
-				- Upholstered				- Floor area 69 m2
-				- 2 bedrooms
-* [View listing](https://www.rotsvast.nl/en/eindhoven-1e-lieven-de-keylaan-H1026319908/)
 
