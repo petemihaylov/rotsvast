@@ -4,7 +4,7 @@ Please consider giving this repo a ⭐
 
 Your support helps make the project more visible to others who might benefit from it.
 
-Last updated: 2025-04-01 18:14:10
+Last updated: 2025-04-01 19:08:42
 
 Found 5 listings between €700 and €1500:
 
@@ -12,7 +12,7 @@ Found 5 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/1fa81966.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1250.00 per month
-* **Found on:** 2025-04-01 18:14:06
+* **Found on:** 2025-04-01 19:08:38
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -24,7 +24,7 @@ Found 5 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5a7497921c29d_354593-julianastraat-te-eindhoven.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1100.00 per month
-* **Found on:** 2025-04-01 18:14:06
+* **Found on:** 2025-04-01 19:08:38
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-05-2025
@@ -36,7 +36,7 @@ Found 5 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52251043.1573740301-889.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €760.00 per month
-* **Found on:** 2025-04-01 18:14:06
+* **Found on:** 2025-04-01 19:08:38
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -48,7 +48,7 @@ Found 5 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/fcee2b8b.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1039.00 per month
-* **Found on:** 2025-04-01 18:14:06
+* **Found on:** 2025-04-01 19:08:38
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -60,7 +60,7 @@ Found 5 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/67db059998d66.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1085.00 per month
-* **Found on:** 2025-04-01 18:13:58
+* **Found on:** 2025-04-01 19:08:31
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 15-04-2025
