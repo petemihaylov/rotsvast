@@ -4,7 +4,7 @@ Please consider giving this repo a ⭐
 
 Your support helps make the project more visible to others who might benefit from it.
 
-Last updated: 2025-04-02 13:21:41
+Last updated: 2025-04-02 14:10:40
 
 Found 5 listings between €700 and €1500:
 
@@ -12,7 +12,7 @@ Found 5 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/1fa81966.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1250.00 per month
-* **Found on:** 2025-04-02 13:21:37
+* **Found on:** 2025-04-02 14:10:35
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -20,23 +20,11 @@ Found 5 listings between €700 and €1500:
 				- 1 bedroom
 * [View listing](https://www.rotsvast.nl/en/diessen-beerseweg-H1026319591/)
 
-### Julianastraat - 5611HS Eindhoven
-<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5a7497921c29d_354593-julianastraat-te-eindhoven.jpg" alt="Property Image" width="400"/>
-
-* **Price:** €1100.00 per month
-* **Found on:** 2025-04-02 13:21:37
-* **Source:** Rotsvast
-* **Properties:**
-- Available from 01-05-2025
-				- Furnished				- Floor area 37 m2
-				- 1 bedroom
-* [View listing](https://www.rotsvast.nl/en/eindhoven-julianastraat-H102631699/)
-
 ### Willem van Hornestraat - 5611PT Eindhoven
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52251043.1573740301-889.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €760.00 per month
-* **Found on:** 2025-04-02 13:21:37
+* **Found on:** 2025-04-02 14:10:35
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -48,7 +36,7 @@ Found 5 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/67db059998d66.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1085.00 per month
-* **Found on:** 2025-04-02 13:21:29
+* **Found on:** 2025-04-02 14:10:26
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 15-04-2025
@@ -56,7 +44,19 @@ Found 5 listings between €700 and €1500:
 				- 2 bedrooms
 * [View listing](https://www.rotsvast.nl/en/eindhoven-1e-lieven-de-keylaan-H1026319908/)
 
-### Albert Schweitzerstraat - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne
+### Julianastraat - 5611HS Eindhoven - 5611HS Eindhoven
+<img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5a7497921c29d_354593-julianastraat-te-eindhoven.jpg" alt="Property Image" width="400"/>
+
+* **Price:** €1100.00 per month
+* **Found on:** 2025-04-02 13:21:37
+* **Source:** Rotsvast
+* **Properties:**
+- Available from 01-05-2025
+				- Furnished				- Floor area 37 m2
+				- 1 bedroom
+* [View listing](https://www.rotsvast.nl/en/eindhoven-julianastraat-H102631699/)
+
+### Albert Schweitzerstraat - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/fcee2b8b.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1039.00 per month
