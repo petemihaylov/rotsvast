@@ -4,7 +4,7 @@ Please consider giving this repo a ⭐
 
 Your support helps make the project more visible to others who might benefit from it.
 
-Last updated: 2025-04-03 06:15:22
+Last updated: 2025-04-03 07:11:03
 
 Found 6 listings between €700 and €1500:
 
@@ -12,7 +12,7 @@ Found 6 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/1fa81966.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1250.00 per month
-* **Found on:** 2025-04-03 06:15:18
+* **Found on:** 2025-04-03 07:10:59
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -24,7 +24,7 @@ Found 6 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52251043.1573740301-889.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €760.00 per month
-* **Found on:** 2025-04-03 06:15:18
+* **Found on:** 2025-04-03 07:10:59
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -36,7 +36,7 @@ Found 6 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/67db059998d66.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1085.00 per month
-* **Found on:** 2025-04-03 06:15:11
+* **Found on:** 2025-04-03 07:10:51
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 15-04-2025
@@ -48,7 +48,7 @@ Found 6 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/664e03453114d.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €807.00 per month
-* **Found on:** 2025-04-03 06:15:07
+* **Found on:** 2025-04-03 07:10:48
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-05-2025
@@ -56,7 +56,7 @@ Found 6 listings between €700 and €1500:
 				- 0 bedrooms
 * [View listing](https://www.rotsvast.nl/en/eindhoven-willemstraat-H1026319789/)
 
-### Julianastraat - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven
+### Julianastraat - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven - 5611HS Eindhoven
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/5a7497921c29d_354593-julianastraat-te-eindhoven.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1100.00 per month
@@ -68,7 +68,7 @@ Found 6 listings between €700 and €1500:
 				- 1 bedroom
 * [View listing](https://www.rotsvast.nl/en/eindhoven-julianastraat-H102631699/)
 
-### Albert Schweitzerstraat - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne
+### Albert Schweitzerstraat - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne - 5751MG Deurne
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/fcee2b8b.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1039.00 per month
