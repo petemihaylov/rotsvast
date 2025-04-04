@@ -4,7 +4,7 @@ Please consider giving this repo a ⭐
 
 Your support helps make the project more visible to others who might benefit from it.
 
-Last updated: 2025-04-04 02:20:33
+Last updated: 2025-04-04 03:25:55
 
 Found 4 listings between €700 and €1500:
 
@@ -12,7 +12,7 @@ Found 4 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/52251043.1573740301-889.JPG" alt="Property Image" width="400"/>
 
 * **Price:** €760.00 per month
-* **Found on:** 2025-04-04 02:20:33
+* **Found on:** 2025-04-04 03:25:55
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -24,7 +24,7 @@ Found 4 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/1fa81966.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1250.00 per month
-* **Found on:** 2025-04-04 02:20:29
+* **Found on:** 2025-04-04 03:25:51
 * **Source:** Rotsvast
 * **Properties:**
 - Available immediately
@@ -36,7 +36,7 @@ Found 4 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/67db059998d66.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €1085.00 per month
-* **Found on:** 2025-04-04 02:20:21
+* **Found on:** 2025-04-04 03:25:43
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 15-04-2025
@@ -48,7 +48,7 @@ Found 4 listings between €700 and €1500:
 <img src="https://pararius-office-prod.global.ssl.fastly.net/10263/files/photos/middle/664e03453114d.jpg" alt="Property Image" width="400"/>
 
 * **Price:** €807.00 per month
-* **Found on:** 2025-04-04 02:20:17
+* **Found on:** 2025-04-04 03:25:39
 * **Source:** Rotsvast
 * **Properties:**
 - Available from 01-05-2025
